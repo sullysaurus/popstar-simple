@@ -7,7 +7,7 @@ const appIcon = "/images/app-icon.svg";
 const appScreenshot = "/images/prim-1.png";
 const footerImage = "/images/banners.svg";
 const pageTitle = "Popstar Photo Booths"
-const favicon = "/images/favicon.png"
+const favicon = "/images/favicon.ico"
 ---
 
 <html lang="en">
@@ -17,9 +17,57 @@ const favicon = "/images/favicon.png"
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <link rel="stylesheet" href="../styles/main.css" />
+      <!-- Google Tag Manager -->
+      <script>
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-NCN2WPGM");
+      </script>
+      <!-- End Google Tag Manager -->
+  
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M24GRXHZVN"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-M24GRXHZVN", {
+          linker: {
+            domains: [
+              "popstarphotobooths.com",
+              "popstar-photo-booths.checkcherry.com",
+            ],
+          },
+        });
+      </script>
+      <!-- End Global site tag (gtag.js) - Google Analytics -->
+  
+      <!-- Open Graph meta tags for link preview -->
+      <meta property="og:title" content="Popstar Photo Booths" />
+      <meta property="og:description" content="North Carolina's Hottest Photo Booth Company" />
+      <meta property="og:image" content="https://www.popstarphotobooths.com/social.png" />
+      <meta property="og:url" content="https://www.popstarphotobooths.com" />
+      
   </head>
   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NCN2WPGM"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
     <div class="container">
       <main>
         <div class="text-container">
@@ -41,3 +89,4 @@ const favicon = "/images/favicon.png"
     <script src="../scripts/main.js"></script>
   </body>
 </html>
+
