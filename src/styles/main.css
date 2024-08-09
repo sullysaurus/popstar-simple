@@ -198,12 +198,13 @@ footer {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3em; /* Smaller header on mobile */
+    font-size: 2.5em; /* Smaller header on mobile */
   }
   
   main {
     flex-direction: column;
     padding: 20px; /* Reduced padding */
+    gap: 10px; /* Set gap to 10px on mobile */
   }
 
   .text-container {
